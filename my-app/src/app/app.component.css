@@ -1,0 +1,18 @@
+#EGA_topRow {
+  background: linear-gradient(to right, rgba(20, 20, 20), rgb(0, 0, 0));
+  height: 350px;
+  background: url(../assets/images/sacramento.jpg);
+  background-size: 100%;
+  opacity: 0.2;
+}
+
+#EGA_topRowOverlay {
+  background-color: rgb(0, 0, 0);
+  height: 350px;
+  z-index: 2;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
+}
+#EGA_cardTileGrouping {
+  display: flex;
+  justify-content: center;
+}

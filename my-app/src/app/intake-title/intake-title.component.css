@@ -1,0 +1,12 @@
+#EGA_intakePortalH1 {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  margin: 170px 0px 0px 75px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#EGA_intakePortalH1 .EGA_titleFont {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
