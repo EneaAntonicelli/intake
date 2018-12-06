@@ -7,7 +7,6 @@
 #EGA_intakePortalH1 {
   font-size: 1rem;
   color: white;
-  position: absolute;
   top: 150px;
   left: 100px;
   font-family: "Roboto Condensed", sans-serif;
@@ -61,7 +60,7 @@
   right: 0;
   opacity: 0.5;
   transition: 0.5s ease;
-  background-color: black;
+  background-color: rgb(165, 165, 165);
   overflow: hidden;
 }
 
@@ -69,6 +68,17 @@
   color: #fff;
 }
 
+#EGA_title {
+  position: absolute;
+  top: 150px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  width: 40%;
+  background: #0000007a;
+  z-index: 4;
+}
 .EGA_backgroundImage h3 {
   padding: 15px 30px;
 }
@@ -76,5 +86,22 @@
 @media screen and (max-width: 768px) {
   .EGA_backgroundImage {
     margin-bottom: 10px;
+  }
+  #EGA_title {
+    height: 135px;
+  }
+  #EGA_intakePortalH1 {
+    font-size: 0.7rem;
+  }
+  #EGA_intakePortalH1 .EGA_titleFont {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .EGA_backgroundImage {
+    margin-bottom: 10px;
+  }
+  #EGA_title {
+    height: 145px;
   }
 }

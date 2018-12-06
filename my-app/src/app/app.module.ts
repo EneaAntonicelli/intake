@@ -6,6 +6,7 @@ import { LoginComponent } from "./login/login.component";
 import { CardTileComponent } from "./card-tile/card-tile.component";
 import { IntakeTitleComponent } from "./intake-title/intake-title.component";
 import { LogoComponent } from './logo/logo.component';
+import { SlideShowComponent } from './slide-show/slide-show.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LogoComponent } from './logo/logo.component';
     LoginComponent,
     CardTileComponent,
     IntakeTitleComponent,
-    LogoComponent
+    LogoComponent,
+    SlideShowComponent
   ],
   imports: [BrowserModule],
   providers: [],
