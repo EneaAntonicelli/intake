@@ -1,6 +1,6 @@
 #EGA_topRow {
   overflow: hidden;
-  max-height: 350px;
+  max-height: 250px;
   box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -103,5 +103,8 @@
   }
   #EGA_title {
     height: 145px;
+  }
+  #EGA_intakePortalH1 .EGA_titleFont {
+    margin-left: unset;
   }
 }
