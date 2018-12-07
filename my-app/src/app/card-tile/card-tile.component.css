@@ -4,15 +4,11 @@
   overflow: hidden;
   background: none;
 }
-.EGA_cardColumn {
-}
-
 #EGA_newCard,
 #EGA_currentCard,
 #EGA_archivedCard {
   color: rgb(17, 17, 17);
 }
-
 #EGA_newCard img,
 #EGA_currentCard img,
 #EGA_archivedCard img {
@@ -22,7 +18,6 @@
   margin-top: 20px;
   z-index: -2;
 }
-
 .EGA_cardTextDiv {
   width: 80%;
   margin: auto;
