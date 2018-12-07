@@ -1,0 +1,26 @@
+<div class="container-fluid" ng-controller="NewQuestions as ctrl">
+  <div class="row">
+    <div class="col-md-12">
+      <form class="EGA_margin30">
+        <div class="form-group">
+          <label for="Q1">{{ this.Q1.question }}</label>
+          <select class="form-control" id="Q1" required>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+          <!-- <input type="text" class="form-control" id="Q1" required /> -->
+        </div>
+
+        <div class="form-group">
+          <label for="Q2">{{ this.Q2.question }}</label>
+          <input type="dropdown" class="form-control" id="Q2" />
+        </div>
+        <div class="form-group">
+          <label for="Q3">{{ this.Q3.question }}</label>
+          <input type="dropdown" class="form-control" id="Q3" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
