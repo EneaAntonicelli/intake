@@ -1,0 +1,80 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 offset-1" id="EGA_tabList">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a
+          class="list-group-item list-group-item-action active"
+          id="list-home-list"
+          data-toggle="list"
+          href="#list-home"
+          role="tab"
+          aria-controls="home"
+          >IT PROJECT</a
+        >
+        <a
+          class="list-group-item list-group-item-action"
+          id="list-profile-list"
+          data-toggle="list"
+          href="#list-profile"
+          role="tab"
+          aria-controls="profile"
+          >TELECOMMUNICATION</a
+        >
+        <a
+          class="list-group-item list-group-item-action"
+          id="list-messages-list"
+          data-toggle="list"
+          href="#list-messages"
+          role="tab"
+          aria-controls="messages"
+          >PROJECT DELEGATION</a
+        >
+        <a
+          class="list-group-item list-group-item-action"
+          id="list-settings-list"
+          data-toggle="list"
+          href="#list-settings"
+          role="tab"
+          aria-controls="settings"
+          >PROJECT AUTHORITY</a
+        >
+      </div>
+    </div>
+    <div class="col-8 offset-1" id="EGA_tabContent">
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="list-home"
+          role="tabpanel"
+          aria-labelledby="list-home-list"
+        >
+          {{ this.itProject.definition }}
+        </div>
+        <div
+          class="tab-pane fade"
+          id="list-profile"
+          role="tabpanel"
+          aria-labelledby="list-profile-list"
+        >
+          {{ this.telecommunication.definition }}
+        </div>
+        <div
+          class="tab-pane fade"
+          id="list-messages"
+          role="tabpanel"
+          aria-labelledby="list-messages-list"
+        >
+          {{ this.projectAuthority.definition }}
+        </div>
+        <div
+          class="tab-pane fade"
+          id="list-settings"
+          role="tabpanel"
+          aria-labelledby="list-settings-list"
+        >
+          {{ this.projectDelegation.definition }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

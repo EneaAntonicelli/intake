@@ -13,6 +13,7 @@ import { NewContractQuestionsComponent } from "./new-contract-questions/new-cont
 import { ManagerDashboardComponent } from "./manager-dashboard/manager-dashboard.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { HomeComponent } from "./home/home.component";
+import { TabListDefinitionsComponent } from './tab-list-definitions/tab-list-definitions.component';
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     NewContractQuestionsComponent,
     ManagerDashboardComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    TabListDefinitionsComponent
   ],
   imports: [
     BrowserModule,

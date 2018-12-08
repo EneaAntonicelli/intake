@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./new-contract-questions.component.css"]
 })
 export class NewContractQuestionsComponent implements OnInit {
-  questions = ["", "YES", "NO", "I DON'T KNOW"];
+  questions = ["YES", "NO", "I DON'T KNOW"];
   submitted = false;
 
   onSubmit() {
