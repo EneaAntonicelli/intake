@@ -1,3 +1,15 @@
 .EGA_margin30 {
   margin: 30px;
 }
+select {
+  width: 150px;
+  text-overflow: ellipsis;
+}
+
+#EGA_questionContainer {
+  margin-top: 40px;
+}
+
+#EGA_tabList {
+  margin-bottom: 40px;
+}

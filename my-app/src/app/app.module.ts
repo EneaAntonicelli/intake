@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
   { path: "new-contract", component: NewContractQuestionsComponent },
   { path: "home", component: HomeComponent },
-  { path: "", redirectTo: "/", pathMatch: "full" },
+  { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "**", component: PageNotFoundComponent }
 ];
 

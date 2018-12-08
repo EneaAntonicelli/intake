@@ -6,7 +6,12 @@
         <div class="EGA_cardTextDiv">
           <h5 class="card-title">{{ new.title }}</h5>
           <p class="card-text">{{ new.summary }}</p>
-          <a href="#" class="btn btn-outline-dark">Enter</a>
+          <a
+            routerLink="/new-contract"
+            class="btn btn-outline-dark"
+            routerLinkActive="active"
+            >Enter</a
+          >
         </div>
       </div>
     </div>
@@ -18,7 +23,12 @@
         <div class="EGA_cardTextDiv">
           <h5 class="card-title">{{ current.title }}</h5>
           <p class="card-text">{{ current.summary }}</p>
-          <a href="#" class="btn btn-outline-dark">Enter</a>
+          <a
+            routerLink="/current-contract"
+            class="btn btn-outline-dark"
+            routerLinkActive="active"
+            >Enter</a
+          >
         </div>
       </div>
     </div>
@@ -30,7 +40,12 @@
         <div class="EGA_cardTextDiv">
           <h5 class="card-title">{{ archived.title }}</h5>
           <p class="card-text">{{ archived.summary }}</p>
-          <a href="#" class="btn btn-outline-dark">Enter</a>
+          <a
+            routerLink="/archived-contract"
+            class="btn btn-outline-dark"
+            routerLinkActive="active"
+            >Enter</a
+          >
         </div>
       </div>
     </div>
