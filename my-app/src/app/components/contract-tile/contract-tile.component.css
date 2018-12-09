@@ -1,0 +1,17 @@
+img {
+  width: 100px;
+}
+
+.card {
+  display: inline-flex;
+  margin: 20px;
+}
+.card:hover {
+  box-shadow: 0 0 3px #ccc;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #051424;
+}

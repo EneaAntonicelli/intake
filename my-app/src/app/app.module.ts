@@ -4,20 +4,23 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from "./app.component";
-import { LoginComponent } from "./login/login.component";
-import { CardTileComponent } from "./card-tile/card-tile.component";
-import { IntakeTitleComponent } from "./intake-title/intake-title.component";
-import { LogoComponent } from "./logo/logo.component";
-import { SlideShowComponent } from "./slide-show/slide-show.component";
-import { NewContractQuestionsComponent } from "./page-new-contract-questions/page-new-contract-questions.component";
-import { ManagerDashboardComponent } from "./page-manager-dashboard/page-manager-dashboard.component";
-import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
-import { HomeComponent } from "./page-home/page-home.component";
-import { TabListDefinitionsComponent } from "./tab-list-definitions/tab-list-definitions.component";
+import { LoginComponent } from "./components/login/login.component";
+import { CardTileComponent } from "./components/card-tile/card-tile.component";
+import { IntakeTitleComponent } from "./components/intake-title/intake-title.component";
+import { LogoComponent } from "./components/logo/logo.component";
+import { SlideShowComponent } from "./components/slide-show/slide-show.component";
+import { NewContractQuestionsComponent } from "./pages/page-new-contract-questions/page-new-contract-questions.component";
+import { ManagerDashboardComponent } from "./pages/page-manager-dashboard/page-manager-dashboard.component";
+import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
+import { HomeComponent } from "./pages/page-home/page-home.component";
+import { TabListDefinitionsComponent } from "./components/tab-list-definitions/tab-list-definitions.component";
+import { PageNewContractComponent } from "./pages/page-new-contract/page-new-contract.component";
+import { ContractTileComponent } from "./components/contract-tile/contract-tile.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
   { path: "new-contract-questions", component: NewContractQuestionsComponent },
+  { path: "page-new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "**", component: PageNotFoundComponent }
@@ -35,7 +38,9 @@ const appRoutes: Routes = [
     ManagerDashboardComponent,
     PageNotFoundComponent,
     HomeComponent,
-    TabListDefinitionsComponent
+    TabListDefinitionsComponent,
+    PageNewContractComponent,
+    ContractTileComponent
   ],
   imports: [
     BrowserModule,
