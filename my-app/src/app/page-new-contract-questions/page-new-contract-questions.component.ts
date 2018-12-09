@@ -1,9 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-new-contract-questions",
-  templateUrl: "./new-contract-questions.component.html",
-  styleUrls: ["./new-contract-questions.component.css"]
+  selector: "app-page-new-contract-questions",
+  templateUrl: "./page-new-contract-questions.component.html",
+  styleUrls: ["./page-new-contract-questions.component.css"]
 })
 export class NewContractQuestionsComponent implements OnInit {
   questions = ["YES", "NO", "I DON'T KNOW"];

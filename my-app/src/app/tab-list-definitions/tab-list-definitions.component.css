@@ -1,3 +1,23 @@
 #EGA_tabList {
   margin-bottom: 40px;
 }
+#EGA_questionsRightColTitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: oswaldbold, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #212529;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+#EGA_questionsRightColSelections {
+  margin-top: 30px;
+}
+.list-group-item.active {
+  background-color: #212529;
+  border-color: #212529;
+}

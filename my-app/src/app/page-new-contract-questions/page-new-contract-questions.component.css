@@ -1,0 +1,41 @@
+.EGA_margin30 {
+  margin: 30px;
+}
+select {
+  width: 150px;
+  text-overflow: ellipsis;
+  float: right;
+}
+
+#EGA_questionContainer {
+  margin-top: 40px;
+}
+
+.form-group,
+label {
+  margin-bottom: 40px;
+}
+#EGA_questionsLeftColumn {
+  margin-bottom: 60px;
+}
+
+#EGA_questionsSubmitButton {
+  float: right;
+}
+
+#EGA_questionsRightColumn {
+  padding-bottom: 30px;
+}
+.EGA_border {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}

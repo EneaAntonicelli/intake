@@ -1,0 +1,47 @@
+<div
+  class="container-fluid"
+  id="EGA_questionContainer"
+  ng-controller="NewQuestions as ctrl"
+>
+  <div class="row">
+    <div class="col-md-6" id="EGA_questionsLeftColumn">
+      <div class="form">
+        <div class="form-group EGA_border">
+          <label for="Q1">{{ this.Q1.question }}</label>
+          <select id="Q1" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q1">{{ this.Q2.question }}</label>
+          <select id="Q1" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q1">{{ this.Q3.question }}</label>
+          <select id="Q1" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <!-- Submit Button -->
+
+          <button
+            type="submit"
+            class="btn btn-outline-dark"
+            id="EGA_questionsSubmitButton"
+          >
+            <a routerLink="/new-contract" routerLinkActive="active">Continue</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="EGA_questionsRightColumn">
+      <app-tab-list-definitions></app-tab-list-definitions>
+    </div>
+  </div>
+</div>
