@@ -34,6 +34,13 @@ export class ContractTileComponent implements OnInit {
       name: "REQUEST FOR APPLICATION",
       description: "Descriptive sentence.",
       image: "../assets/images/new1.jpg"
+    },
+    {
+      id: "5",
+      title: "RFO",
+      name: "REQUEST FOR OFFER",
+      description: "Descriptive sentence.",
+      image: "../assets/images/new1.jpg"
     }
   ];
   constructor() {}

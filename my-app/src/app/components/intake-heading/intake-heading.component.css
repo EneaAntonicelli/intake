@@ -8,12 +8,10 @@
   color: white;
   top: 150px;
   left: 100px;
-  font-family: "Roboto Condensed", sans-serif;
   z-index: 1;
 }
 #EGA_h1 .EGA_span {
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
   margin-left: 20px;
   z-index: 1;
 }

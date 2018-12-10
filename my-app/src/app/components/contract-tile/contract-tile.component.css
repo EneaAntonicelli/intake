@@ -4,14 +4,16 @@ img {
 
 .card {
   display: inline-flex;
-  margin: 20px;
+  margin: 15px;
+  width: 247px;
+  height: 250px;
 }
 .card:hover {
-  box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 5px rgb(182, 182, 182);
 }
 
 h1 {
   text-align: center;
   font-size: 3rem;
-  color: #051424;
+  color: #343d47;
 }

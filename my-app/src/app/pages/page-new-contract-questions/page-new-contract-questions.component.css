@@ -22,6 +22,9 @@ label {
 #EGA_questionsSubmitButton {
   float: right;
 }
+#EGA_questionsSubmitButton:hover {
+  color: white;
+}
 
 #EGA_questionsRightColumn {
   padding-bottom: 30px;

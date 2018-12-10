@@ -6,7 +6,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./components/login/login.component";
 import { CardTileComponent } from "./components/card-tile/card-tile.component";
-import { IntakeTitleComponent } from "./components/intake-title/intake-title.component";
+import { IntakeHeadingComponent } from "./components/intake-heading/intake-heading.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { SlideShowComponent } from "./components/slide-show/slide-show.component";
 import { NewContractQuestionsComponent } from "./pages/page-new-contract-questions/page-new-contract-questions.component";
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     CardTileComponent,
-    IntakeTitleComponent,
+    IntakeHeadingComponent,
     LogoComponent,
     SlideShowComponent,
     NewContractQuestionsComponent,
