@@ -18,6 +18,8 @@ import { PageNewContractComponent } from "./pages/page-new-contract/page-new-con
 import { ContractTileComponent } from "./components/contract-tile/contract-tile.component";
 import { PageSoftQuestionsComponent } from "./pages/page-soft-questions/page-soft-questions.component";
 import { LinkTileComponent } from "./components/link-tile/link-tile.component";
+import { ManagerNewWorkItemComponent } from "./components/manager-new-work-item/manager-new-work-item.component";
+import { ManagerHeadingComponent } from "./components/manager-heading/manager-heading.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
@@ -45,7 +47,9 @@ const appRoutes: Routes = [
     PageNewContractComponent,
     ContractTileComponent,
     PageSoftQuestionsComponent,
-    LinkTileComponent
+    LinkTileComponent,
+    ManagerNewWorkItemComponent,
+    ManagerHeadingComponent
   ],
   imports: [
     BrowserModule,
