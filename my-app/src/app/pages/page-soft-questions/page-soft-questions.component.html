@@ -1,0 +1,80 @@
+<div
+  class="container-fluid"
+  id="EGA_questionContainer"
+  ng-controller="NewQuestions as ctrl"
+>
+  <div class="row">
+    <div class="col-md-6" id="EGA_questionsLeftColumn">
+      <div class="form EGA_formCentered">
+        <div class="form-group EGA_border">
+          <label for="Q1">{{ this.Q1.question }}</label>
+          <select id="Q1" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q2">{{ this.Q2.question }}</label>
+          <select id="Q2" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q3">{{ this.Q3.question }}</label>
+          <select id="Q3" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q4">{{ this.Q4.question }}</label>
+          <select id="Q4" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q5">{{ this.Q5.question }}</label>
+          <select id="Q5" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group EGA_border">
+          <label for="Q6">{{ this.Q6.question }}</label>
+          <select id="Q6" class="form-control">
+            <option selected></option>
+            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <!-- Submit Button -->
+
+          <button
+            type="submit"
+            class="btn btn-outline-dark"
+            id="EGA_questionsSubmitButton"
+          >
+            <a routerLink="/page-soft-questions" routerLinkActive="active"
+              >Continue</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="EGA_questionsRightColumn">
+      <h1>
+        This page will hold soft questions used to acquire as much data as
+        possible prior to this being routed to a manager.
+      </h1>
+      <br />
+      <br />
+      <h1>
+        This aside area can be reserved for more definitions or visual aids that
+        can help with the questions being asked. It can also provide direct
+        links.
+      </h1>
+    </div>
+  </div>
+</div>

@@ -16,11 +16,13 @@ import { HomeComponent } from "./pages/page-home/page-home.component";
 import { TabListDefinitionsComponent } from "./components/tab-list-definitions/tab-list-definitions.component";
 import { PageNewContractComponent } from "./pages/page-new-contract/page-new-contract.component";
 import { ContractTileComponent } from "./components/contract-tile/contract-tile.component";
+import { PageSoftQuestionsComponent } from "./pages/page-soft-questions/page-soft-questions.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
-  { path: "new-contract-questions", component: NewContractQuestionsComponent },
-  { path: "page-new-contract", component: PageNewContractComponent },
+  { path: "new-contract", component: NewContractQuestionsComponent },
+  { path: "soft-questions", component: PageSoftQuestionsComponent },
+  { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "**", component: PageNotFoundComponent }
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     HomeComponent,
     TabListDefinitionsComponent,
     PageNewContractComponent,
-    ContractTileComponent
+    ContractTileComponent,
+    PageSoftQuestionsComponent
   ],
   imports: [
     BrowserModule,
