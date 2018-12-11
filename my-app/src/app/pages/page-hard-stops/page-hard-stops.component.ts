@@ -8,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class HardStopsComponent implements OnInit {
   questions = ["YES", "NO", "I DON'T KNOW"];
   submitted = false;
+  questionAnswer = [];
 
   onSubmit() {
     this.submitted = true;

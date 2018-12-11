@@ -8,25 +8,22 @@
       <div class="form EGA_formCentered">
         <div class="form-group EGA_border">
           <label for="Q1">{{ this.Q1.question }}</label>
-          <div
-            id="EGA_projectNumberContainer"
-            ng-app="myApp"
-            ng-controller="myCtrl"
-          >
+          <div id="EGA_projectNumberContainer" *ngIf="questionAnswer == 'YES'">
             <label for="projectNumber">Project Number:</label>
             <input
               type="text"
-              aria-required="false"
+              aria-required="true"
               maxlength="40"
               value=""
               autocomplete="off"
-              ng-non-bindable=""
               class="form-control"
               id="EGA_projectNumber"
-              spellcheck="false"
             />
           </div>
-          <select class="EGA_question form-control">
+          <select
+            [(ngModel)]="questionAnswer"
+            class="EGA_question form-control"
+          >
             <option selected></option>
             <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
           </select>
@@ -46,8 +43,6 @@
           </select>
         </div>
         <div class="form-group">
-          <!-- Submit Button -->
-
           <button
             type="submit"
             class="btn btn-outline-dark"
