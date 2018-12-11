@@ -17,7 +17,7 @@ import { TabListDefinitionsComponent } from "./components/tab-list-definitions/t
 import { PageNewContractComponent } from "./pages/page-new-contract/page-new-contract.component";
 import { ContractTileComponent } from "./components/contract-tile/contract-tile.component";
 import { PageSoftQuestionsComponent } from "./pages/page-soft-questions/page-soft-questions.component";
-import { LinkTileComponent } from './link-tile/link-tile.component';
+import { LinkTileComponent } from "./components/link-tile/link-tile.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
