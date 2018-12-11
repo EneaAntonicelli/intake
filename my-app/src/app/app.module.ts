@@ -9,7 +9,7 @@ import { CardTileComponent } from "./components/card-tile/card-tile.component";
 import { IntakeHeadingComponent } from "./components/intake-heading/intake-heading.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { SlideShowComponent } from "./components/slide-show/slide-show.component";
-import { NewContractQuestionsComponent } from "./pages/page-new-contract-questions/page-new-contract-questions.component";
+import { HardStopsComponent } from "./pages/page-hard-stops/page-hard-stops.component";
 import { ManagerDashboardComponent } from "./pages/page-manager-dashboard/page-manager-dashboard.component";
 import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
 import { HomeComponent } from "./pages/page-home/page-home.component";
@@ -17,10 +17,11 @@ import { TabListDefinitionsComponent } from "./components/tab-list-definitions/t
 import { PageNewContractComponent } from "./pages/page-new-contract/page-new-contract.component";
 import { ContractTileComponent } from "./components/contract-tile/contract-tile.component";
 import { PageSoftQuestionsComponent } from "./pages/page-soft-questions/page-soft-questions.component";
+import { LinkTileComponent } from './link-tile/link-tile.component';
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
-  { path: "new-contract", component: NewContractQuestionsComponent },
+  { path: "hard-stops", component: HardStopsComponent },
   { path: "soft-questions", component: PageSoftQuestionsComponent },
   { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
@@ -36,14 +37,15 @@ const appRoutes: Routes = [
     IntakeHeadingComponent,
     LogoComponent,
     SlideShowComponent,
-    NewContractQuestionsComponent,
+    HardStopsComponent,
     ManagerDashboardComponent,
     PageNotFoundComponent,
     HomeComponent,
     TabListDefinitionsComponent,
     PageNewContractComponent,
     ContractTileComponent,
-    PageSoftQuestionsComponent
+    PageSoftQuestionsComponent,
+    LinkTileComponent
   ],
   imports: [
     BrowserModule,

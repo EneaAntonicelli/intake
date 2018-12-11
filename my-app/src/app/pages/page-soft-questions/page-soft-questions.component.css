@@ -10,12 +10,7 @@ select {
 #EGA_questionContainer {
   margin-top: 40px;
 }
-
-.form-group,
-label {
-  margin-bottom: 40px;
-}
-#EGA_questionsLeftColumn {
+.EGA_border {
   margin-bottom: 60px;
 }
 
@@ -27,6 +22,9 @@ label {
 }
 
 #EGA_questionsRightColumn {
+  padding-bottom: 30px;
+}
+#EGA_questionsLeftColumn {
   padding-bottom: 30px;
 }
 .EGA_border {
@@ -45,4 +43,8 @@ a {
 }
 a:hover {
   color: white;
+}
+.form-control:hover {
+  box-shadow: 0 6px 18px -9px #000000;
+  transition: box-shadow 0.2s;
 }
