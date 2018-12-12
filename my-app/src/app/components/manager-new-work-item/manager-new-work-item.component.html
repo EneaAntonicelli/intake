@@ -8,7 +8,6 @@
       beatae quia?
     </p>
   </tr>
-  <!-- <h3 class="EGA_new">New Work Orders</h3> -->
 </table>
 
 <table
@@ -22,7 +21,7 @@
       <th scope="col">Assignment</th>
       <th scope="col">Department</th>
       <th scope="col">Amount</th>
-      <th scope="col">Status</th>
+      <th scope="col">Info</th>
       <th scope="col">Assign to</th>
       <th scope="col">Backup</th>
     </tr>
@@ -35,7 +34,15 @@
       <td>CA-MIMMS</td>
       <td>DHCS</td>
       <td>$934,000</td>
-      <td>UNASSIGNED</td>
+      <td>
+        <a
+          routerLink=""
+          class="btn btn-outline-dark"
+          id="EGA_btn"
+          routerLinkActive="active"
+          >Details</a
+        >
+      </td>
       <td><app-staff-dropdown></app-staff-dropdown></td>
       <td><app-staff-dropdown></app-staff-dropdown></td>
     </tr>
