@@ -1,6 +1,9 @@
 #EGA_logo {
   width: 300px;
 }
+#EGA_logo:focus {
+  outline: 0 !important;
+}
 #EGA_logoContainer {
   border-bottom: 4px solid #fdb81e;
   padding: 2px;
