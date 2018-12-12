@@ -1,3 +1,8 @@
 .EGA_marginTop20 {
   margin-top: 20px;
 }
+
+.form-inline {
+  display: block;
+  padding: 10px;
+}

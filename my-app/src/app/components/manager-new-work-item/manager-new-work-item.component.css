@@ -1,5 +1,12 @@
-h1 {
+h3 {
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
+}
+.EGA_new {
+  display: inline-flex;
+  background: #3d8ca0;
+  color: white;
+  border: none;
+  text-align: center;
 }
