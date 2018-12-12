@@ -1,0 +1,9 @@
+button {
+  color: white;
+}
+button:hover {
+  border-color: white;
+}
+.modal-content {
+  color: black;
+}

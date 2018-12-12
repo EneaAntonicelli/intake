@@ -23,6 +23,7 @@ import { ManagerHeadingComponent } from "./components/manager-heading/manager-he
 import { ManagerStaffWorkloadComponent } from "./components/manager-staff-workload/manager-staff-workload.component";
 import { StaffDropdownComponent } from "./components/staff-dropdown/staff-dropdown.component";
 import { SearchbarComponent } from "./components/searchbar/searchbar.component";
+import { DetailsModalComponent } from './components/details-modal/details-modal.component';
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     ManagerHeadingComponent,
     ManagerStaffWorkloadComponent,
     StaffDropdownComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    DetailsModalComponent
   ],
   imports: [
     BrowserModule,
