@@ -20,7 +20,9 @@ import { PageSoftQuestionsComponent } from "./pages/page-soft-questions/page-sof
 import { LinkTileComponent } from "./components/link-tile/link-tile.component";
 import { ManagerNewWorkItemComponent } from "./components/manager-new-work-item/manager-new-work-item.component";
 import { ManagerHeadingComponent } from "./components/manager-heading/manager-heading.component";
-import { ManagerStaffAssignmentsComponent } from "./components/manager-staff-assignments/manager-staff-assignments.component";
+import { ManagerStaffWorkloadComponent } from "./components/manager-staff-workload/manager-staff-workload.component";
+import { StaffDropdownComponent } from "./components/staff-dropdown/staff-dropdown.component";
+import { SearchbarComponent } from "./components/searchbar/searchbar.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
@@ -51,7 +53,9 @@ const appRoutes: Routes = [
     LinkTileComponent,
     ManagerNewWorkItemComponent,
     ManagerHeadingComponent,
-    ManagerStaffAssignmentsComponent
+    ManagerStaffWorkloadComponent,
+    StaffDropdownComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,4 @@
+<select [(ngModel)]="staffSelection" class="EGA_staff form-control">
+  <option selected></option>
+  <option *ngFor="let S of staff" [value]="S">{{ S }}</option>
+</select>

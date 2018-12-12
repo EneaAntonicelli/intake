@@ -4,12 +4,36 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <app-manager-new-work-item></app-manager-new-work-item>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="EGA_navTabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#newAssignments"
+            >NEW ASSIGNMENTS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#staffWorkload"
+            >STAFF WORKLOAD</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#myProjects"
+            >MY PROJECTS</a
+          >
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container active" id="newAssignments">
+          <app-manager-new-work-item></app-manager-new-work-item>
+        </div>
+        <div class="tab-pane container fade" id="staffWorkload">
+          <app-manager-staff-workload></app-manager-staff-workload>
+        </div>
+        <div class="tab-pane container fade" id="myProjects">...</div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <app-manager-staff-assignments></app-manager-staff-assignments>
-    </div>
-  </div>
+  <div class="row"><div class="col-12"></div></div>
 </div>

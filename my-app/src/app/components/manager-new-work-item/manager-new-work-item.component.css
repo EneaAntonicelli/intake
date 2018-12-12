@@ -10,3 +10,11 @@ h3 {
   border: none;
   text-align: center;
 }
+#EGA_newAssignmentSubmit {
+  float: right;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    text-align: center;
+  }
+}

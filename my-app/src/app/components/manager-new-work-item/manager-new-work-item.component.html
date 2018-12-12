@@ -23,6 +23,8 @@
       <th scope="col">Department</th>
       <th scope="col">Amount</th>
       <th scope="col">Status</th>
+      <th scope="col">Assign to</th>
+      <th scope="col">Backup</th>
     </tr>
   </thead>
   <tbody>
@@ -34,6 +36,11 @@
       <td>DHCS</td>
       <td>$934,000</td>
       <td>UNASSIGNED</td>
+      <td><app-staff-dropdown></app-staff-dropdown></td>
+      <td><app-staff-dropdown></app-staff-dropdown></td>
     </tr>
   </tbody>
 </table>
+<button type="submit" class="btn btn-outline-dark" id="EGA_newAssignmentSubmit">
+  Assign
+</button>
