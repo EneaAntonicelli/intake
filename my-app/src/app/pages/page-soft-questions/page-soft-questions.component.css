@@ -1,11 +1,6 @@
 .EGA_margin30 {
   margin: 30px;
 }
-select {
-  width: 150px;
-  text-overflow: ellipsis;
-  float: right;
-}
 
 #EGA_questionContainer {
   margin-top: 40px;
@@ -16,6 +11,7 @@ select {
 
 #EGA_questionsSubmitButton {
   float: right;
+  margin: 20px;
 }
 #EGA_questionsSubmitButton:hover {
   color: white;

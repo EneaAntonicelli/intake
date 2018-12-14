@@ -1,78 +1,147 @@
 <div
-  class="container-fluid"
+  class="container"
   id="EGA_questionContainer"
   ng-controller="NewQuestions as ctrl"
 >
-  <div class="row">
-    <div class="col-md-7" id="EGA_questionsLeftColumn">
-      <div class="form EGA_formCentered">
-        <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q1.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q2">{{ this.Q2.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q3">{{ this.Q3.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q4">{{ this.Q4.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q5">{{ this.Q5.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q6">{{ this.Q6.question }}</label>
-          <select class="form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <!-- Submit Button -->
-
-          <button
-            type="submit"
-            class="btn btn-outline-dark"
-            id="EGA_questionsSubmitButton"
-          >
-            <a routerLink="/dashboard/1" routerLinkActive="active">Continue</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5" id="EGA_questionsRightColumn">
-      <h1>
-        This page will hold soft questions used to acquire as much data as
-        possible prior to this being routed to a manager.
-      </h1>
-      <br />
-      <br />
-      <h1>
-        This aside area can be reserved for more definitions or visual aids that
-        can help with the questions being asked. It can also provide direct
-        links.
-      </h1>
+  <div class="form-group row">
+    <label for="example-text-input" class="col-2 col-form-label">Text</label>
+    <div class="col-10">
+      <input
+        class="form-control"
+        type="text"
+        value="Artisanal kale"
+        id="example-text-input"
+      />
     </div>
   </div>
+  <div class="form-group row">
+    <label for="example-search-input" class="col-2 col-form-label"
+      >Search</label
+    >
+    <div class="col-10">
+      <input
+        class="form-control"
+        type="search"
+        value="How do I shoot web"
+        id="example-search-input"
+      />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-email-input" class="col-2 col-form-label">Email</label>
+    <div class="col-10">
+      <input
+        class="form-control"
+        type="email"
+        value="bootstrap@example.com"
+        id="example-email-input"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+    />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      placeholder="Password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleTextarea">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input
+      type="file"
+      class="form-control-file"
+      id="exampleInputFile"
+      aria-describedby="fileHelp"
+    />
+    <small id="fileHelp" class="form-text text-muted"
+      >This is some placeholder block-level help text for the above input. It's
+      a bit lighter and easily wraps to a new line.</small
+    >
+  </div>
+  <fieldset class="form-group">
+    <legend>Radio buttons</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="optionsRadios"
+          id="optionsRadios1"
+          value="option1"
+          checked
+        />
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="optionsRadios"
+          id="optionsRadios2"
+          value="option2"
+        />
+        Option two can be something else and selecting it will deselect option
+        one
+      </label>
+    </div>
+    <div class="form-check disabled">
+      <label class="form-check-label">
+        <input
+          type="radio"
+          class="form-check-input"
+          name="optionsRadios"
+          id="optionsRadios3"
+          value="option3"
+          disabled
+        />
+        Option three is disabled
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" /> Check me out
+    </label>
+  </div>
+  <!-- Submit Button -->
+
+  <button
+    type="submit"
+    class="btn btn-outline-dark"
+    id="EGA_questionsSubmitButton"
+  >
+    <a routerLink="/dashboard/1" routerLinkActive="active">Continue</a>
+  </button>
 </div>

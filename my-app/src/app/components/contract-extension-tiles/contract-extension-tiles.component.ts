@@ -13,17 +13,17 @@ export class ContractExtensionTilesComponent implements OnInit {
   constructor() {
     this.envoke = {
       title: "AMEND / EXTEND MY CURRENT CONTRACT BY INVOKING AN OPTION",
-      summary: "Start a new Work Order",
+      summary: "",
       image: "../assets/images/new1.jpg"
     };
     this.timeAndLabor = {
-      title: "ACTIVE",
-      summary: "View and/or amend active Contracts",
+      title: "AMEND CONTRACT MAINTENANCE AND OPERATION",
+      summary: "",
       image: "../assets/images/current1.jpg"
     };
     this.other = {
-      title: "ARCHIVED",
-      summary: "View archived Contracts",
+      title: "AMEND CONTRACT FOR ANY OTHER REASON",
+      summary: "",
       image: "../assets/images/archived1.jpg"
     };
   }
