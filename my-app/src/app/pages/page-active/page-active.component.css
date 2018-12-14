@@ -7,9 +7,14 @@
 .EGA_border {
   margin-bottom: 45px;
 }
-.EGA_border div label {
-  color: #fdb81e;
+/* #EGA_dateLabel {
+  text-align: right;
 }
+#EGA_dateInput {
+  justify-content: flex-end;
+  display: flex;
+} */
+
 #EGA_projectNumber {
   width: 250px;
 }

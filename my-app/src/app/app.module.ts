@@ -26,11 +26,14 @@ import { StaffDropdownComponent } from "./components/staff-dropdown/staff-dropdo
 import { SearchbarComponent } from "./components/searchbar/searchbar.component";
 import { DetailsModalComponent } from "./components/details-modal/details-modal.component";
 import { PageActiveComponent } from "./pages/page-active/page-active.component";
+import { PageActiveIIComponent } from "./pages/page-active-ii/page-active-ii.component";
+import { ContractExtensionTilesComponent } from './components/contract-extension-tiles/contract-extension-tiles.component';
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
   { path: "new", component: PageNewComponent },
   { path: "active", component: PageActiveComponent },
+  { path: "active-2", component: PageActiveIIComponent },
   { path: "soft-questions", component: PageSoftQuestionsComponent },
   { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
@@ -61,7 +64,9 @@ const appRoutes: Routes = [
     StaffDropdownComponent,
     SearchbarComponent,
     DetailsModalComponent,
-    PageActiveComponent
+    PageActiveComponent,
+    PageActiveIIComponent,
+    ContractExtensionTilesComponent
   ],
   imports: [
     BrowserModule,

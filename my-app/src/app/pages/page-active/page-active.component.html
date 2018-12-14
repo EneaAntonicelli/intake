@@ -9,36 +9,31 @@
         <div class="form-group EGA_border">
           <label for="Q1">{{ this.Q1.question }}</label>
           <input type="text" class="form-control" id="inputContractAmount" />
+          <div id="EGA_dateLabel">
+            <label for="example-date-input" class="col-form-label"
+              >When does this Contract expire?</label
+            >
+            <div id="EGA_dateInput">
+              <input
+                class="form-control"
+                type="date"
+                value="2011-08-19"
+                id="example-date-input"
+              />
+            </div>
+          </div>
         </div>
-        <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q2.question }}</label>
-          <select class="EGA_question form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
-        <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q3.question }}</label>
-          <select class="EGA_question form-control">
-            <option selected></option>
-            <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
-          </select>
-        </div>
+
         <div class="form-group">
           <button
             type="submit"
             class="btn btn-outline-dark"
             id="EGA_questionsSubmitButton"
           >
-            <a routerLink="/soft-questions" routerLinkActive="active"
-              >Continue</a
-            >
+            <a routerLink="/active-2" routerLinkActive="active">Continue</a>
           </button>
         </div>
       </div>
-    </div>
-    <div class="col-md-5" id="EGA_questionsRightColumn">
-      <app-tab-list-definitions></app-tab-list-definitions>
     </div>
   </div>
 </div>
