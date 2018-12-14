@@ -13,17 +13,17 @@ export class CardTileComponent implements OnInit {
   constructor() {
     this.new = {
       title: "NEW",
-      summary: "Start a new Contract",
+      summary: "Start a new Work Order",
       image: "../assets/images/new1.jpg"
     };
     this.current = {
-      title: "CURRENT",
-      summary: "View existing Contracts",
+      title: "ACTIVE",
+      summary: "View and/or amend active Contracts",
       image: "../assets/images/current1.jpg"
     };
     this.archived = {
       title: "ARCHIVED",
-      summary: "View Archived Contracts",
+      summary: "View archived Contracts",
       image: "../assets/images/archived1.jpg"
     };
   }

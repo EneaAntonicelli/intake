@@ -2,6 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./components/login/login.component";
@@ -9,7 +10,7 @@ import { CardTileComponent } from "./components/card-tile/card-tile.component";
 import { IntakeHeadingComponent } from "./components/intake-heading/intake-heading.component";
 import { LogoComponent } from "./components/logo/logo.component";
 import { SlideShowComponent } from "./components/slide-show/slide-show.component";
-import { HardStopsComponent } from "./pages/page-hard-stops/page-hard-stops.component";
+import { PageNewComponent } from "./pages/page-new/page-new.component";
 import { ManagerDashboardComponent } from "./pages/page-manager-dashboard/page-manager-dashboard.component";
 import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
 import { HomeComponent } from "./pages/page-home/page-home.component";
@@ -23,11 +24,13 @@ import { ManagerHeadingComponent } from "./components/manager-heading/manager-he
 import { ManagerStaffWorkloadComponent } from "./components/manager-staff-workload/manager-staff-workload.component";
 import { StaffDropdownComponent } from "./components/staff-dropdown/staff-dropdown.component";
 import { SearchbarComponent } from "./components/searchbar/searchbar.component";
-import { DetailsModalComponent } from './components/details-modal/details-modal.component';
+import { DetailsModalComponent } from "./components/details-modal/details-modal.component";
+import { PageActiveComponent } from "./pages/page-active/page-active.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
-  { path: "hard-stops", component: HardStopsComponent },
+  { path: "new", component: PageNewComponent },
+  { path: "active", component: PageActiveComponent },
   { path: "soft-questions", component: PageSoftQuestionsComponent },
   { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
@@ -43,7 +46,7 @@ const appRoutes: Routes = [
     IntakeHeadingComponent,
     LogoComponent,
     SlideShowComponent,
-    HardStopsComponent,
+    PageNewComponent,
     ManagerDashboardComponent,
     PageNotFoundComponent,
     HomeComponent,
@@ -57,17 +60,19 @@ const appRoutes: Routes = [
     ManagerStaffWorkloadComponent,
     StaffDropdownComponent,
     SearchbarComponent,
-    DetailsModalComponent
+    DetailsModalComponent,
+    PageActiveComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

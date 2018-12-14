@@ -1,0 +1,58 @@
+.EGA_margin30 {
+  margin: 30px;
+}
+#EGA_questionContainer {
+  margin-top: 40px;
+}
+.EGA_border {
+  margin-bottom: 45px;
+}
+.EGA_border div label {
+  color: #fdb81e;
+}
+#EGA_projectNumber {
+  width: 250px;
+}
+#EGA_questionsSubmitButton {
+  float: right;
+}
+#EGA_questionsSubmitButton:hover {
+  color: white;
+}
+#EGA_questionsRightColumn {
+  padding-bottom: 30px;
+}
+.EGA_border {
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 5px;
+}
+.EGA_formCentered {
+  width: 90%;
+  margin: auto;
+}
+select {
+  width: 150px;
+  text-overflow: ellipsis;
+  float: right;
+}
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #EGA_questionsLeftColumn[_ngcontent-c2] {
+    margin-bottom: 60px;
+  }
+  #EGA_projectNumber {
+    margin: 20px;
+  }
+}
+.EGA_question:hover {
+  box-shadow: 0 6px 18px -9px #000000;
+  transition: box-shadow 0.2s;
+}

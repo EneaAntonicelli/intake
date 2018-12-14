@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HardStopsComponent } from "./page-hard-stops.component";
+import { PageNewComponent } from "./page-new.component";
 
-describe("HardStopsComponent", () => {
-  let component: HardStopsComponent;
-  let fixture: ComponentFixture<HardStopsComponent>;
+describe("PageNewComponent", () => {
+  let component: PageNewComponent;
+  let fixture: ComponentFixture<PageNewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HardStopsComponent]
+      declarations: [PageNewComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HardStopsComponent);
+    fixture = TestBed.createComponent(PageNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

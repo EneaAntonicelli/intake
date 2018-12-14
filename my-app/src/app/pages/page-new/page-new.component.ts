@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-page-hard-stops",
-  templateUrl: "./page-hard-stops.component.html",
-  styleUrls: ["./page-hard-stops.component.css"]
+  selector: "app-page-new",
+  templateUrl: "./page-new.component.html",
+  styleUrls: ["./page-new.component.css"]
 })
-export class HardStopsComponent implements OnInit {
+export class PageNewComponent implements OnInit {
   questions = ["YES", "NO", "I DON'T KNOW"];
   submitted = false;
   questionAnswer = [];
