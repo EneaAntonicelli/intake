@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { PageSoftQuestionsComponent } from './page-soft-questions.component';
+import { PageSoftQuestionsComponent } from "./page-soft-questions.component";
 
-describe('PageSoftQuestionsComponent', () => {
+describe("PageSoftQuestionsComponent", () => {
   let component: PageSoftQuestionsComponent;
   let fixture: ComponentFixture<PageSoftQuestionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageSoftQuestionsComponent ]
-    })
-    .compileComponents();
+      declarations: [PageSoftQuestionsComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('PageSoftQuestionsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

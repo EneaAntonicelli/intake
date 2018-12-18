@@ -1,0 +1,29 @@
+<div class="registration-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="registration code" />
+      <input type="text" placeholder="name" />
+      <input type="text" placeholder="email address" />
+      <input type="password" placeholder="password" />
+      <input type="password" placeholder="repeat password" />
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="optionsRadios"
+            id="optionsRadios1"
+            value="option1"
+          />
+          Remember Me
+        </label>
+      </div>
+      <button routerLink="/home" routerLinkActive="active">create</button>
+      <p class="message">
+        Already registered?
+        <a routerLink="/login" routerLinkActive="active">Sign In</a>
+      </p>
+    </form>
+  </div>
+</div>

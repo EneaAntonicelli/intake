@@ -27,17 +27,21 @@ import { SearchbarComponent } from "./components/searchbar/searchbar.component";
 import { DetailsModalComponent } from "./components/details-modal/details-modal.component";
 import { PageActiveComponent } from "./pages/page-active/page-active.component";
 import { PageActiveIIComponent } from "./pages/page-active-ii/page-active-ii.component";
-import { ContractExtensionTilesComponent } from './components/contract-extension-tiles/contract-extension-tiles.component';
+import { ContractExtensionTilesComponent } from "./components/contract-extension-tiles/contract-extension-tiles.component";
+import { PageRegistrationComponent } from "./pages/page-registration/page-registration.component";
+import { PageLoginComponent } from "./pages/page-login/page-login.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
   { path: "new", component: PageNewComponent },
   { path: "active", component: PageActiveComponent },
+  { path: "registration", component: PageRegistrationComponent },
+  { path: "login", component: PageLoginComponent },
   { path: "active-2", component: PageActiveIIComponent },
   { path: "soft-questions", component: PageSoftQuestionsComponent },
   { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "", redirectTo: "login", pathMatch: "full" },
   { path: "**", component: PageNotFoundComponent }
 ];
 
@@ -66,7 +70,9 @@ const appRoutes: Routes = [
     DetailsModalComponent,
     PageActiveComponent,
     PageActiveIIComponent,
-    ContractExtensionTilesComponent
+    ContractExtensionTilesComponent,
+    PageRegistrationComponent,
+    PageLoginComponent
   ],
   imports: [
     BrowserModule,

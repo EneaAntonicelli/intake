@@ -7,14 +7,9 @@
 .EGA_border {
   margin-bottom: 45px;
 }
-/* #EGA_dateLabel {
-  text-align: right;
+.row {
+  justify-content: center;
 }
-#EGA_dateInput {
-  justify-content: flex-end;
-  display: flex;
-} */
-
 #EGA_projectNumber {
   width: 250px;
 }
