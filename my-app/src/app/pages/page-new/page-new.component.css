@@ -13,7 +13,10 @@
   margin-bottom: 45px;
 }
 .EGA_border div label {
-  color: #fdb81e;
+  color: #164675;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fdb81e;
 }
 #EGA_projectNumber {
   width: 250px;
