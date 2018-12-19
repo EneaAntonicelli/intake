@@ -3,11 +3,23 @@
   id="EGA_questionContainer"
   ng-controller="NewQuestions as ctrl"
 >
+  <!--
+    THIS COMMENTED OUT AREA SHOWS WHAT I AM TRYING TO ACHIEVE BUT NEED TO UNDERSTAND HOW BEST TO DO IT IN ANGULAR
+  -->
+  <!--
+    <div class="row" id="EGA_contractAmountRow">
+      <div class="col-6">
+        <label for="">{{ this.Q1.question }}</label>
+        <input class="form-control" type="text" [(ngModel)]="contractAmount" />
+      </div>
+    </div>
+  -->
+  <!-- <div class="row" *ngIf="contractAmount > 100000"> -->
   <div class="row">
     <div class="col-md-7" id="EGA_questionsLeftColumn">
       <div class="form EGA_formCentered">
         <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q1.question }}</label>
+          <label for="Q1">{{ this.Q2.question }}</label>
           <div id="EGA_projectNumberContainer" *ngIf="questionAnswer == 'YES'">
             <label for="projectNumber">Project Number:</label>
             <input
@@ -29,14 +41,14 @@
           </select>
         </div>
         <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q2.question }}</label>
+          <label for="Q1">{{ this.Q3.question }}</label>
           <select class="EGA_question form-control">
             <option selected></option>
             <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>
           </select>
         </div>
         <div class="form-group EGA_border">
-          <label for="Q1">{{ this.Q3.question }}</label>
+          <label for="Q1">{{ this.Q4.question }}</label>
           <select class="EGA_question form-control">
             <option selected></option>
             <option *ngFor="let Q of questions" [value]="Q">{{ Q }}</option>

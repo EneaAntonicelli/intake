@@ -21,7 +21,10 @@ export class PageActiveComponent implements OnInit {
   constructor() {
     this.Q1 = {
       title: "Question 1",
-      question: "1.	What is the Contract number for this request?"
+      question: "What is the Contract number for this request?"
+    };
+    this.Q2 = {
+      question: "When does this Contract expire?"
     };
   }
 

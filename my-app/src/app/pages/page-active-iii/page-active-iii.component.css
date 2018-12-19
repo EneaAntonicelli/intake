@@ -1,0 +1,21 @@
+#EGA_questionsSubmitButton {
+  float: right;
+}
+#EGA_questionsSubmitButton:hover {
+  color: white;
+}
+a {
+  color: #212529;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+#EGA_questionContainer {
+  margin-top: 4%;
+}
+h2 {
+  text-align: center;
+  padding: 10px 10px 30px 10px;
+}

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginComponent } from './login.component';
+import { PageActiveIIIComponent } from './page-active-iii.component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+describe('PageActiveIIIComponent', () => {
+  let component: PageActiveIIIComponent;
+  let fixture: ComponentFixture<PageActiveIIIComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
+      declarations: [ PageActiveIIIComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(PageActiveIIIComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

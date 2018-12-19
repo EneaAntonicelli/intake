@@ -5,7 +5,6 @@ import { RouterModule, Routes } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
-import { LoginComponent } from "./components/login/login.component";
 import { CardTileComponent } from "./components/card-tile/card-tile.component";
 import { IntakeHeadingComponent } from "./components/intake-heading/intake-heading.component";
 import { LogoComponent } from "./components/logo/logo.component";
@@ -30,6 +29,7 @@ import { PageActiveIIComponent } from "./pages/page-active-ii/page-active-ii.com
 import { ContractExtensionTilesComponent } from "./components/contract-extension-tiles/contract-extension-tiles.component";
 import { PageRegistrationComponent } from "./pages/page-registration/page-registration.component";
 import { PageLoginComponent } from "./pages/page-login/page-login.component";
+import { PageActiveIIIComponent } from "./pages/page-active-iii/page-active-iii.component";
 
 const appRoutes: Routes = [
   { path: "dashboard/:id", component: ManagerDashboardComponent },
@@ -38,6 +38,7 @@ const appRoutes: Routes = [
   { path: "registration", component: PageRegistrationComponent },
   { path: "login", component: PageLoginComponent },
   { path: "active-2", component: PageActiveIIComponent },
+  { path: "active-3", component: PageActiveIIIComponent },
   { path: "soft-questions", component: PageSoftQuestionsComponent },
   { path: "new-contract", component: PageNewContractComponent },
   { path: "home", component: HomeComponent },
@@ -48,7 +49,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     CardTileComponent,
     IntakeHeadingComponent,
     LogoComponent,
@@ -72,7 +72,8 @@ const appRoutes: Routes = [
     PageActiveIIComponent,
     ContractExtensionTilesComponent,
     PageRegistrationComponent,
-    PageLoginComponent
+    PageLoginComponent,
+    PageActiveIIIComponent
   ],
   imports: [
     BrowserModule,
