@@ -16,7 +16,7 @@
           href="#list-home"
           role="tab"
           aria-controls="home"
-          >IT PROJECT</a
+          >DELEGATED IT PROJECT</a
         >
         <a
           class="list-group-item list-group-item-action"
@@ -25,7 +25,7 @@
           href="#list-profile"
           role="tab"
           aria-controls="profile"
-          >TELECOMMUNICATION</a
+          >NON-DELEGATED IT PROJECT</a
         >
         <a
           class="list-group-item list-group-item-action"
@@ -34,7 +34,7 @@
           href="#list-messages"
           role="tab"
           aria-controls="messages"
-          >PROJECT DELEGATION</a
+          >TELECOMMUNICATIONS</a
         >
         <a
           class="list-group-item list-group-item-action"
@@ -58,20 +58,22 @@
           {{ this.itProject.definition }}
         </div>
         <div
+          style="white-space:pre-wrap"
           class="tab-pane fade"
           id="list-profile"
           role="tabpanel"
           aria-labelledby="list-profile-list"
         >
-          {{ this.telecommunication.definition }}
+          {{ this.nonDelegatedItProject.definition }}
         </div>
         <div
+          style="white-space:pre-wrap"
           class="tab-pane fade"
           id="list-messages"
           role="tabpanel"
           aria-labelledby="list-messages-list"
         >
-          {{ this.projectAuthority.definition }}
+          {{ this.telecommunications.definition }}
         </div>
         <div
           class="tab-pane fade"

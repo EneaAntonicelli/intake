@@ -41,6 +41,8 @@
 }
 select {
   width: 150px;
+  position: absolute;
+  right: 10%;
   text-overflow: ellipsis;
   float: right;
 }
