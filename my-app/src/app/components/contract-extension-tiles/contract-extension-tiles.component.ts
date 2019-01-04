@@ -13,16 +13,18 @@ export class ContractExtensionTilesComponent implements OnInit {
   constructor() {
     this.envoke = {
       title: "AMEND / EXTEND MY CURRENT CONTRACT BY INVOKING AN OPTION",
-      summary: "",
+      summary:
+        "The contract must contain language that allows an option to be invoked",
       image: "../assets/images/new1.jpg"
     };
     this.timeAndLabor = {
-      title: "AMEND CONTRACT MAINTENANCE AND OPERATION",
-      summary: "",
+      title: "TERMINATE OR CANCEL CONTRACT",
+      summary:
+        "Contract termination: calls off of an existing contract between two parties \nContract cancellation: usually involves canceling a service ",
       image: "../assets/images/current1.jpg"
     };
     this.other = {
-      title: "AMEND CONTRACT FOR ANY OTHER REASON",
+      title: "AMEND CONTRACT FOR ANY OTHER REASON (THIS REQUIRES AN NCB)",
       summary: "",
       image: "../assets/images/archived1.jpg"
     };

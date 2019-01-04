@@ -10,7 +10,7 @@ export class TabListDefinitionsComponent implements OnInit {
   nonDelegatedItProject: any;
   telecommunications: any;
   projectDelegation: any;
-
+  test = "<h1>test</h1>";
   constructor() {
     this.itProject = {
       definition:
